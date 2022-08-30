@@ -226,7 +226,7 @@ nav ul li a:focus::before {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   background-color: var(--secondary-color);
   margin: 1rem;
-  border-radius: 1px;
+  border-radius: 10px;
   border-color: black;
   box-sizing: content-box;
 }
@@ -236,35 +236,37 @@ nav ul li a:focus::before {
   transition: opacity 450ms ease-in-out;
 }
 
-.ReactModal__Overlay--after-open{
+.ReactModal__Overlay--after-open {
   opacity: 1;
 }
 
-.ReactModal__Overlay--before-close{
+.ReactModal__Overlay--before-close {
   opacity: 0;
 }
 
 .moverlay {
   opacity: 0;
   transition: opacity 2000ms ease-in-out;
-  z-index: 0
+  z-index: 0;
 }
 
-.moverlay--after-open{
+.moverlay--after-open {
   opacity: 1;
 }
 
-.moverlay--before-close{
+.moverlay--before-close {
   opacity: 0;
 }
-
 
 .movDetails {
   display: flex;
 }
 .mposter {
+  margin: 0;
+  padding: 0;
   width: 300px;
-  height: auto;
+  height: 100%;
+  border-radius: 10px;
 }
 .mdetails {
   padding: 1rem;
